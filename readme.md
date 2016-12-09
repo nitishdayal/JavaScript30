@@ -6,7 +6,7 @@ Join the challenge (for free!) here - [JavaScript30](https://javascript30.com/ac
 
 Build 30 things in 30 days with vanilla JavaScript; no frameworks, libraries, etc. 
   Pacing is totally up to the individual; if you feel like knocking out 30 challenges
-  in 30 minutes, hey, more power to you, but that would miss the point of this challenge.
+  in 30 minutes, hey, more power to you, but that would miss the point of this course (IMO).
   The idea behind these exercises is to utilize small amounts of what would regularly be
   'downtime' as moments in which we can build on our knowledge through some simple
   exercises. My goal is to _participate_ in 3 challenges per day (watch the videos, take 
