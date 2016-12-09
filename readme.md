@@ -1,5 +1,5 @@
 # JavaScript30 - 30 Day JavaScript Challenge
-Course created by @wesbos  
+Course created by [Wes Bos](@wesbos)
 Join the challenge (for free!) here - [JavaScript30](https://javascript30.com/account)
 
 ## About
@@ -9,7 +9,8 @@ Build 30 things in 30 days with vanilla JavaScript; no frameworks, libraries, et
   in 30 minutes, hey, more power to you, but that would miss the point of this challenge.
   The idea behind these exercises is to utilize small amounts of what would regularly be
   'downtime' as moments in which we can build on our knowledge through some simple
-  exercises. My goal is to _participate_ in 3 challenges per day (watch the videos, take some notes, etc.) and to _complete_ one challenge per day.
+  exercises. My goal is to _participate_ in 3 challenges per day (watch the videos, take 
+  some notes, etc.) and to _complete_ one challenge per day.
 
 The starter files include solutions to most challenges, so this isn't really meant to be 
   taken as some kind of competition or something. JavaScript30 appears to be more focused on
@@ -19,7 +20,7 @@ The starter files include solutions to most challenges, so this isn't really mea
 
 ## Table Of Contents
 
-1. [ ] JavaScript Drum Kit
+1. [x] ~~[JavaScript Drum Kit](./01\ -\ JavaScript\ Drum\ Kit)~~
 2. [ ] JS + CSS Clock
 3. [ ] CSS Variables
 4. [ ] Array Cardio, Day 1
