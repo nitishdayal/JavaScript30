@@ -20,8 +20,8 @@ The starter files include solutions to most challenges, so this isn't really mea
 
 ## Table Of Contents
 
-1. [x] ~~[JavaScript Drum Kit](./01\ -\ JavaScript\ Drum\ Kit)~~
-2. [x] ~~[JS + CSS Clock](./02\ -\ JS\ +\ CSS\ Clock/)~~
+1. [x] ~~[JavaScript Drum Kit](./exercises/01\ -\ JavaScript\ Drum\ Kit)~~
+2. [x] ~~[JS + CSS Clock](./exercises/02\ -\ JS\ +\ CSS\ Clock/)~~
 3. [ ] CSS Variables
 4. [ ] Array Cardio, Day 1
 5. [ ] Flex Panel Gallery
