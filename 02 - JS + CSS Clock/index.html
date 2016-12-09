@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
+
 <body>
 
 
-    <div class="clock">
-      <div class="clock-face">
-        <div class="hand hour-hand"></div>
-        <div class="hand min-hand"></div>
-        <div class="hand second-hand"></div>
-      </div>
+  <div class="clock">
+    <div class="clock-face">
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
     </div>
-
+  </div>
 
   <style>
     html {
@@ -66,31 +67,42 @@
       transition: all 0.05s;
       transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     }
-</style>
+
+  </style>
 
 <script>
+  /*  GOAL: Write the JavaScript code necessary to transform the HTML elements
+   *  on the page into a functioning clock.
+   */
+
+  // Create references to the HTML elements that we want to transform
   const secondHand = document.querySelector('.second-hand');
-  const minsHand = document.querySelector('.min-hand');
-  const hourHand = document.querySelector('.hour-hand');
+  const minuteHand = document.querySelector('.min-hand');
+  const hourHand = document.querySelector('.hour-hand')
 
   function setDate() {
-    const now = new Date();
+    const now = new Date(); // Create new Date object
 
+    // Get current seconds, calculate the degree shift, and apply the styling
     const seconds = now.getSeconds();
-    const secondsDegrees = ((seconds / 60) * 360) + 90;
-    secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+    const secondHandDegrees = ((seconds / 60) * 360) + 90;
+    secondHand.style.transform = `rotate(${secondHandDegrees}deg)`;
 
-    const mins = now.getMinutes();
-    const minsDegrees = ((mins / 60) * 360) + 90;
-    minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+    // Get current minutes, calculate the degree shift, and apply the styling
+    const minutes = now.getMinutes();
+    const minuteHandDegrees = ((minutes / 60) * 360) + 90;
+    minuteHand.style.transform = `rotate(${minuteHandDegrees}deg)`;
 
-    const hour = now.getMinutes();
-    const hourDegrees = ((mins / 12) * 360) + 90;
-    hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+    // Hour hand transformation can utilize the data gathered for the minute
+    // hand, with a minor alteration in how the degree shift is calculated.
+    const hourHandDegrees = ((minutes / 12) * 360) + 90;
+    hourHand.style.transform = `rotate(${hourHandDegrees}deg)`;
   }
 
+  // Call function once every second
   setInterval(setDate, 1000);
 
 </script>
 </body>
+
 </html>
