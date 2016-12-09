@@ -13,10 +13,9 @@ Build 30 things in 30 days with vanilla JavaScript; no frameworks, libraries, et
   some notes, etc.) and to _complete_ one challenge per day.
 
 The starter files include solutions to most challenges, so this isn't really meant to be 
-  taken as some kind of competition or something. JavaScript30 appears to be more focused on
-  helping developers enhance their current skillset by eliminating the want to grab
-  a JS library and focus on doing things programatically; **if it can be done with a JS
-  library, it should be able to be done with vanilla JS.**
+  taken as some kind of competition or something. JavaScript30 appears to be focused more on
+  helping developers enhance their current skillset and reducing developer reliance on external
+  JS libraries; **if it can be done with a JS library, it can (probably) be done with vanilla JS.**
 
 ## Table Of Contents
 
