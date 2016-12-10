@@ -1,5 +1,5 @@
 # JavaScript30 - 30 Day JavaScript Challenge
-Course created by [Wes Bos](https://github.com/wesbos)
+Course created by [Wes Bos](https://github.com/wesbos)  
 Join the challenge (for free!) here - [JavaScript30](https://javascript30.com/account)
 
 ## About
@@ -21,7 +21,7 @@ The starter files include solutions to most challenges, so this isn't really mea
 
 1. [x] ~~[JavaScript Drum Kit](./exercises/01\ -\ JavaScript\ Drum\ Kit)~~
 2. [x] ~~[JS + CSS Clock](./exercises/02\ -\ JS\ +\ CSS\ Clock/)~~
-3. [ ] CSS Variables
+3. [x] ~~[CSS Variables](./exercises/03\ -\ CSS\ Variables)~~
 4. [ ] Array Cardio, Day 1
 5. [ ] Flex Panel Gallery
 6. [ ] Type Ahead
