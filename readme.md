@@ -25,7 +25,7 @@ The starter files include solutions to most challenges, so this isn't really mea
 1. [x] ~~[JavaScript Drum Kit](./exercises/01\ -\ JavaScript\ Drum\ Kit/)~~
 2. [x] ~~[JS + CSS Clock](./exercises/02\ -\ JS\ +\ CSS\ Clock/)~~
 3. [x] ~~[CSS Variables](./exercises/03\ -\ CSS\ Variables/)~~
-4. [ ] Array Cardio, Day 1
+4. [x] [Array Cardio, Day 1](./exercises/04\ -\ Array\ Cardio\ Day\ 1/)
 5. [ ] Flex Panel Gallery
 6. [ ] Type Ahead
 7. [ ] Array Cardio, Day 2
@@ -36,7 +36,7 @@ The starter files include solutions to most challenges, so this isn't really mea
 12. [ ] Key Sequence Detection
 13. [ ] Slide in on Scroll
 14. [ ] JavaScript References vs. Copying
-15. [ ] LocalStorate
+15. [ ] LocalStorage
 16. [ ] Mouse Move Shadow
 17. [ ] Sort Without Articles
 18. [ ] Adding Up Times with Reduce
