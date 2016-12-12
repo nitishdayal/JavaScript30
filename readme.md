@@ -23,6 +23,8 @@ The starter files include solutions to most challenges, so this isn't really mea
 **UPDATE:** If you're here for written guides, please be patient with me! I've made it a priority
 to get as many of these done as possible, as quickly as possible. Thank youuu. ❤️
 
+Completed written guides can be found in the corresponding challenge directory (click the links below, folks).
+
 ## Table Of Contents
 
 1. [x] ~~[JavaScript Drum Kit](./exercises/01\ -\ JavaScript\ Drum\ Kit/)~~
