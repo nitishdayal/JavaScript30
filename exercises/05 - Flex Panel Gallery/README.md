@@ -50,6 +50,7 @@ Finally, we'll write some JavaScript code to attach _event listeners_ to each `p
 
 - CSS
   1. Update the styling applied to the `panels` class to display as a _flex container_:
+
     ```CSS
     .panels {
       /* ... */
@@ -58,6 +59,7 @@ Finally, we'll write some JavaScript code to attach _event listeners_ to each `p
     ```
   2. Update the styling applied to each `panel` so that they equally maximize their
     width to fill out the _flex container_:
+
     ```CSS
     .panel {
       /* ... */
@@ -66,6 +68,7 @@ Finally, we'll write some JavaScript code to attach _event listeners_ to each `p
     ```
   3. Update the styling applied to the `panel` class so that each panel is also a _flex
     container_ and displays its content in _columns_:
+
     ```CSS
     .panel {
       /* ... */
@@ -75,6 +78,7 @@ Finally, we'll write some JavaScript code to attach _event listeners_ to each `p
     ```
   4. Update the styling applied to the child elements of the `panel` class so they are
     treated as _flex items_ and are center justified:
+
     ```CSS
     .panel > * {
       /* ... */
@@ -86,6 +90,7 @@ Finally, we'll write some JavaScript code to attach _event listeners_ to each `p
     ```
   5. Create new style definitions for the _first and last child elements_ of the `panel`
   class so that the content is pushed off the main page until the panel is selected by the user:
+
     ```CSS
     .panel > *:first-child {
       transform: translateY(-100%);
@@ -105,6 +110,7 @@ Finally, we'll write some JavaScript code to attach _event listeners_ to each `p
     ```
   6. Update the styling applied to the `panel open` class so that the selected panel takes up
     5x the space of the other _flex items_:
+    
     ```CSS
     .panel.open {
       /* ... */
