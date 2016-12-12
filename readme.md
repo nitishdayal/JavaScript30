@@ -34,7 +34,7 @@ Completed written guides can be found in the corresponding challenge directory (
 4. [x] ~~[Array Cardio, Day 1](./exercises/04\ -\ Array\ Cardio\ Day\ 1/)~~
 5. [x] ~~[Flex Panel Gallery](./exercises/05\ -\ Flex\ Panel\ Gallery/)~~
 6. [x] ~~[Type Ahead](./exercises/06\ -\ Type\ Ahead/)~~
-7. [ ] Array Cardio, Day 2
+7. [x] ~~[Array Cardio, Day 2](./exercises/07\ -\ Array\ Cardio\ Day\ 2/)~~
 8. [ ] Fun with HTML5 Canvas
 9. [ ] Dev Tools Domination
 10. [ ] Hold Shift and Check Checkboxes
