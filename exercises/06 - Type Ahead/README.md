@@ -62,6 +62,7 @@ Declare a variable which will contain an array and **fetch** the data from the p
     - Target the _inner HTML_ of the `unordered list` (using the variable defined in Step 1) and
     set it as the variable containing the big _template string_.
 6. Format the population so that it's separated by commas. We can use this function:
+
     ```JavaScript
     function numberWithCommas(x) {
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
