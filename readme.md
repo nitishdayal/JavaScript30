@@ -20,6 +20,9 @@ The starter files include solutions to most challenges, so this isn't really mea
   helping developers enhance their current skillset and reducing developer reliance on external
   JS libraries; **if it can be done with a JS library, it can (probably) be done with vanilla JS.**
 
+**UPDATE:** If you're here for written guides, please be patient with me! I've made it a priority
+to get as many of these done as possible, as quickly as possible. Thank youuu. ❤️
+
 ## Table Of Contents
 
 1. [x] ~~[JavaScript Drum Kit](./exercises/01\ -\ JavaScript\ Drum\ Kit/)~~
