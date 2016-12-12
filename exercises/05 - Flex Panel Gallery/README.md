@@ -126,6 +126,7 @@ Finally, we'll write some JavaScript code to attach _event listeners_ to each `p
     and providing a different function name for the _event handler_.
   4. Define the function for Step 2 to **toggle** the class `open` on the _function context_.
   5. Define the function for Step 3 to **toggle** the class `open-active` on the _function
-    context_ **IF** the event has a property name which includes the word 'flex'.
+    context_ **IF** the event which triggered this function has a property name that
+    includes the word 'flex'.
 
 CHALLENGE 5 === DEMOLISHED
