@@ -53,7 +53,7 @@ The purpose of this exercise is to gain experience using _CSS3 variables_. These
   1. Declare & define a variable as a reference to all of the inputs on the page.
   2. Iterate through the _HTML Node Elements_ that the variable is referencing and 
     attach _event listeners_ to all of them that will call on an _event handler_ whenever
-  the input value has been changed.
+    the input value has been changed.
   3. Repeat step 2, listening for mouse movements on the inputs instead of value
     changes.
   4. Define a function that will be used as the _event handler_. This will update
