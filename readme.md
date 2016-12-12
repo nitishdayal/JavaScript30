@@ -29,7 +29,7 @@ to get as many of these done as possible, as quickly as possible. Thank youuu. â
 2. [x] ~~[JS + CSS Clock](./exercises/02\ -\ JS\ +\ CSS\ Clock/)~~
 3. [x] ~~[CSS Variables](./exercises/03\ -\ CSS\ Variables/)~~
 4. [x] ~~[Array Cardio, Day 1](./exercises/04\ -\ Array\ Cardio\ Day\ 1/)~~
-5. [ ] Flex Panel Gallery
+5. [x] ~~[Flex Panel Gallery](./exercises/05\ -\ Flex\ Panel\ Gallery/)~~
 6. [ ] Type Ahead
 7. [ ] Array Cardio, Day 2
 8. [ ] Fun with HTML5 Canvas
