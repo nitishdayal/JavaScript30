@@ -73,7 +73,7 @@ Finally, we'll write some JavaScript code to attach _event listeners_ to each `p
     .panel {
       /* ... */
       display: flex;
-      flex-direction: columns;
+      flex-direction: column;
     }
     ```
   4. Update the styling applied to the child elements of the `panel` class so they are
