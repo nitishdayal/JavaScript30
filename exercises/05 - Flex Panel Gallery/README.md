@@ -43,7 +43,7 @@ Horizontally and vertically center the content of the `panel` class, and modify 
   update the CSS for the `panel open` class so that the selected `div` will be 5x
   larger than the other `div` elements. ~~Holy CSS, Batman!~~
 
-Finally, we'll write some JavaScript code to attach _event listeners_ to each `panels`
+Finally, we'll write some JavaScript code to attach _event listeners_ to each `panel`
   element that will fire when an panel is clicked on and call their respective _event
   handlers_; one _event handler_ function will adjust the size of the panel, and the
   other will be responsible for bringing in the `p` elements that we pushed off earlier.
