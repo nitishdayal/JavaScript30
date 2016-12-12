@@ -15,10 +15,11 @@ Build 30 things in 30 days with vanilla JavaScript; no frameworks, libraries, et
   exercises. My goal is to _participate_ in 3 challenges per day (watch the videos, take 
   some notes, etc.) and to _complete_ one challenge per day.
 
-The starter files include solutions to most challenges, so this isn't really meant to be 
-  taken as some kind of competition or something. JavaScript30 appears to be focused more on
-  helping developers enhance their current skillset and reducing developer reliance on external
-  JS libraries; **if it can be done with a JS library, it can (probably) be done with vanilla JS.**
+The starter files (available [here](https://github.com/wesbos/JavaScript30)) include solutions to 
+  most challenges, so this isn't really meant to be taken as some kind of competition or something. 
+  JavaScript30 appears to be focused more on helping developers enhance their current skillset and 
+  reducing developer reliance on external JS libraries; **if it can be done with a JS library, 
+  it can (probably) be done with vanilla JS.**
 
 **UPDATE:** If you're here for written guides, please be patient with me! I've made it a priority
 to get as many of these done as possible, as quickly as possible. Thank youuu. ❤️
