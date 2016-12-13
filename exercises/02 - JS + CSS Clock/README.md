@@ -42,4 +42,3 @@ The HTML file has 3 `div` elements which correspond with the second, minute, and
   3. Call the function defined in step 2 every second.
 
 Yaaaaaay! All done!
-    
