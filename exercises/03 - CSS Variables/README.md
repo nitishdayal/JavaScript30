@@ -33,7 +33,7 @@ The purpose of this exercise is to gain experience using _CSS3 variables_. These
       :root {
         --base: #ffc600;
         --blur: 10px;
-        --spacing: 10px;
+        --padding: 10px;
       }
       ```
   2. Declare a new style for the `img` element and set the `background`, `filter`, and
