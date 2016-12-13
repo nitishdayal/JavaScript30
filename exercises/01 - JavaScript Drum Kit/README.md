@@ -20,7 +20,7 @@ We are provided with the HTML, CSS, and sound clips necessary to create this
     `div.key` and `audio` element in the provided HTML file has a `data-key` attribute
     which corresponds with a keyboard button.
 
-- CSS `active` class & pre-defined style: The provided CSS file already has an `playing`
+- CSS `playing` class & pre-defined style: The provided CSS file already has an `playing`
     class defined with some styling in it. We will apply this class to the correct
     element, depending on the key pressed by the user, and remove it once animation
     is finished.
@@ -37,8 +37,8 @@ And that's...pretty much all we should need from the HTML & CSS files. We can us
   that name as the second argument for our event listener.
 
 2. Create a function with the name that you decided on in step 1. 
-    - The function should accept one parameter, the _event_ which the function is going   to handle. 
-    - The body of the function will declare and define two variables that will 
+    - The function should accept one parameter, the _event_ which the function is going to handle. 
+    - In the body of the function, declare and define two variables that will 
       reference the  _div and audio elements_ that correspond with the keypress which 
       triggered the function (if such elements exist). 
     - If the key pressed doesn't match one of the keys defined on our page we don't 
