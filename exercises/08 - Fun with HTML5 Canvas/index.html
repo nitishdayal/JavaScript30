@@ -15,58 +15,57 @@
   <canvas id="draw" width="800" height="800"></canvas>
 
   <script>
+    // Store logic inside an anonymous function to avoid polluting global namespace
     (() => {
+      // Declare & define variable reference to canvas HTMLElement
       const myCanvas = document.querySelector('#draw');
-      myCanvas.width = window.innerWidth;
-      myCanvas.height = window.innerHeight;
+      myCanvas.width = window.innerWidth;   // Width matches the available window width
+      myCanvas.height = window.innerHeight; // Height matches the available window height
 
+      // Declare & define variable reference to the CONTEXT of the canvas (what's in it)
       const ctx = myCanvas.getContext('2d');
-      ctx.lindeWidth = 100;
-      ctx.lineJoin = 'round';
-      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';               // Intersecting/connected lines will have a smooth join
+      ctx.lineCap = 'round';                // End of line will be smooth
 
-      const mouse = { x: 0, y: 0 };
-      const last_mouse = { x: 0, y: 0 };
+      // Declare & define variable reference for current & last mouse location
+      const mouse = { x: 0, y: 0 },
+        last_mouse = { x: 0, y: 0 };
 
-      let hue = 0;
-      let increaseLineWidth = true;
+      // Declare & define variables to change line hue & line width
+      let hue = 0,
+        increaseLineWidth = true;
 
+      // mousedown event handler function
       const quickDraw = () => {
-        ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
-        ctx.beginPath();
-        ctx.moveTo(last_mouse.x, last_mouse.y);
-        ctx.lineTo(mouse.x, mouse.y);
-        ctx.closePath();
-        ctx.stroke();
+        ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`; // Set hue, saturation, & luminosity
+        ctx.beginPath();                            // Begin or reset current path
+        ctx.moveTo(last_mouse.x, last_mouse.y);     // Starting point of path
+        ctx.lineTo(mouse.x, mouse.y);               // Ending point of path
+        ctx.closePath();              // Create path starting from moveTo and ending at lineTo
+        ctx.stroke();                 // Draw the defined path on the canvas                   
 
-        hue >= 360 ? hue = 0 : hue++;
+        hue >= 360 ? hue = 0 : hue++; // Ternary operator to reset/increase hue value
 
-        increaseLineWidth ? ctx.lineWidth++ : ctx.lineWidth--;
+        increaseLineWidth ? ctx.lineWidth++ : ctx.lineWidth--; // Ternary operator to increase/decrease line width
 
+        // Width of line increases or decreases, staying within a value of 1-100.
         if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) increaseLineWidth = !increaseLineWidth;
       }
 
+      // mousemove Event Handler function
       const setMouseLocation = (e) => {
-        last_mouse.x = mouse.x;
-        last_mouse.y = mouse.y;
-        mouse.x = e.offsetX;
-        mouse.y = e.offsetY;
+        // Update values based on previous & current mouse locations using array destructuring
+        [last_mouse.x, last_mouse.y] = [mouse.x, mouse.y];
+        [mouse.x, mouse.y] = [e.offsetX, e.offsetY];
       }
 
-      myCanvas.addEventListener('mousemove', setMouseLocation, false);
+      // Attach event listeners
+      myCanvas.addEventListener('mousemove', setMouseLocation);
+      myCanvas.addEventListener('mousedown', () => myCanvas.addEventListener('mousemove', quickDraw));
+      myCanvas.addEventListener('mouseup', () => myCanvas.removeEventListener('mousemove', quickDraw));
+      myCanvas.addEventListener('mouseout', () => myCanvas.removeEventListener('mousemove', quickDraw));
+    })(); // Immediately invoke anonymous function 
 
-      myCanvas.addEventListener('mousedown', (e) => {
-        myCanvas.addEventListener('mousemove', quickDraw, false);
-      }, false);
-
-      myCanvas.addEventListener('mouseup', (e) => {
-        myCanvas.removeEventListener('mousemove', quickDraw, false);
-      }, false);
-
-      myCanvas.addEventListener('mouseout', () => {
-        myCanvas.removeEventListener('mousemove', quickDraw, false);
-      })
-    })();
   </script>
 
 </body>
