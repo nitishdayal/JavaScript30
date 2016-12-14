@@ -1,6 +1,6 @@
 # JavaScript30 - 30 Day JavaScript Challenge
 Nitish Dayal, Software & Applications Developer  
-Last Commit Date: Dec 12, 2016
+Last Commit Date: Dec 14, 2016
 
 > Course created by [Wes Bos](https://github.com/wesbos)  
 > Join the challenge (for free!) here - [JavaScript30](https://javascript30.com/account)
@@ -35,7 +35,7 @@ Completed written guides can be found in the corresponding challenge directory (
 5. [x] ~~[Flex Panel Gallery](./exercises/05\ -\ Flex\ Panel\ Gallery/)~~
 6. [x] ~~[Type Ahead](./exercises/06\ -\ Type\ Ahead/)~~
 7. [x] ~~[Array Cardio, Day 2](./exercises/07\ -\ Array\ Cardio\ Day\ 2/)~~
-8. [ ] Fun with HTML5 Canvas
+8. [x] ~~[Fun with HTML5 Canvas](./exercises/08\ -\ Fun\ with\ HTML5\ Canvas/)~~
 9. [ ] Dev Tools Domination
 10. [ ] Hold Shift and Check Checkboxes
 11. [ ] Custom Video Player
