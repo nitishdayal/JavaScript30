@@ -61,7 +61,6 @@ The _event handler_ function will check to see if the 'shift' key was held down 
 
   4. Iterate through the **NodeList** and add an _event listener_ to each element that will
     call upon a yet-to-be-defined _event handler_ function on a click event.
-        - Ex: 
 
           ```JavaScript
           // The name of the function to be used as the event handler is your choice.
