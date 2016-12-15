@@ -54,15 +54,19 @@ The _event handler_ function will check to see if the 'shift' key was held down 
 
   1. Declare an _immediately invoked anonymous function_ that will contain the rest
     of the JavaScript code, so as to avoid polluting the **global namespace**.
-  
-  2. Declare & define a `const` variable as a reference to every `input` element
-    that is a child of the `inbox` class.
 
-        `const checkBoxes = document.querySelectorAll('.inbox input[type="checkbox"]');`
+
+  2. Declare & define a `const` variable as a reference to every `input` element
+    that is a child of the `inbox` class.  
+      ```JavaScript
+        const checkBoxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+      ```
+
+  3. Declare a `let` variable that will be defined later as the _last `input` that was selected_.  
   
-  3. Declare a `let` variable that will be defined later as the _last `input` that was selected_.
-        
-        `let lastSelected;`
+        ```JavaScript
+          let lastSelected;
+        ```
 
   4. Iterate through the **NodeList** and add an _event listener_ to each element that will
     call upon a yet-to-be-defined _event handler_ function on a click event.
@@ -103,7 +107,7 @@ The _event handler_ function will check to see if the 'shift' key was held down 
       - If the `ID` property of the _function context_ is greater than the `ID` property
         of the last selected `input`, set the first `let` variable as the `ID` property
         of the _last selected `input` and set the second `let variable` as the `ID` property
-        of the `input` that is the _function context_. Otherwise, flip 'em!
+        of the `input` that is the function context_. Otherwise, flip 'em!
 
           ```JavaScript
           /* Still in the body of the conditional statement */
@@ -136,7 +140,7 @@ The _event handler_ function will check to see if the 'shift' key was held down 
           /** In order to remove all the 'input' elements aside from the ones in between
             * the function context and the last selected input, we'll use the `slice`
             * method. `slice` takes two arguments: the index that we want to slice our
-            * array from, and the last index to be included in this new sliced portion.
+            * array from, and the index where we want to cut off this new sliced portion.
             * I incremented the first argument by 1 because the input element associated
             * with the original value of startIdx has already been accounted for (it's either
             * 'this` or 'lastSelected', and we only want the inputs between those two).
