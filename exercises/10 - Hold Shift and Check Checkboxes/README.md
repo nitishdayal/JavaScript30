@@ -40,6 +40,7 @@ The _event handler_ function will check to see if the 'shift' key was held down 
 
 - HTML
   1. Number each `input` element by giving them an `id` property, starting at 0.
+      
       ```HTML
       <input type="checkbox" id="0">
       ...
