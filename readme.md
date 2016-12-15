@@ -36,7 +36,7 @@ Completed written guides can be found in the corresponding challenge directory (
 6. [x] ~~[Type Ahead](./exercises/06\ -\ Type\ Ahead/)~~
 7. [x] ~~[Array Cardio, Day 2](./exercises/07\ -\ Array\ Cardio\ Day\ 2/)~~
 8. [x] ~~[Fun with HTML5 Canvas](./exercises/08\ -\ Fun\ with\ HTML5\ Canvas/)~~
-9. [ ] Dev Tools Domination
+9. [x] ~~[Dev Tools Domination](./exercises/09\ -\ Dev\ Tools\ Domination/)~~
 10. [ ] Hold Shift and Check Checkboxes
 11. [ ] Custom Video Player
 12. [ ] Key Sequence Detection
