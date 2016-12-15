@@ -56,11 +56,11 @@ The _event handler_ function will check to see if the 'shift' key was held down 
   2. Declare & define a `const` variable as a reference to every `input` element
     that is a child of the `inbox` class.
 
-        - Ex: `const checkBoxes = document.querySelectorAll('.inbox input[type="checkbox"]');`
+        `const checkBoxes = document.querySelectorAll('.inbox input[type="checkbox"]');`
   
   3. Declare a `let` variable that will be defined later as the _last `input` that was selected_.
         
-        - Ex: `let lastSelected;`
+        `let lastSelected;`
 
   4. Iterate through the **NodeList** and add an _event listener_ to each element that will
     call upon a yet-to-be-defined _event handler_ function on a click event.
