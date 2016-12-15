@@ -116,14 +116,9 @@
             [startIdx, endIdx] = [lastSelected.id, this.id] :
             [startIdx, endIdx] = [this.id, lastSelected.id];
 
-          const arrayOfInputs = Array.from(checkBoxes).slice(parseInt(startIdx) + 1, endIdx);
+          const middleInputs = Array.from(checkBoxes).slice(parseInt(startIdx) + 1, endIdx);
 
-          arrayOfInputs.forEach(
-            checkbox => {
-              console.log()
-              checkbox.checked = lastSelected.checked;
-            }
-          );
+          middleInputs.forEach(checkbox => checkbox.checked = this.checked = lastSelected.checked);
         }
 
         lastSelected = this;

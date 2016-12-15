@@ -6,4 +6,4 @@ TODO
 
 ## Guide:
 
-TODO
+TODO (I went _slightly_ overboard on this one, but it's worth it. README will be up in <1.5hrs.)
