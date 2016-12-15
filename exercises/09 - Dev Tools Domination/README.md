@@ -1,13 +1,13 @@
 # Exercise 9: Dev Tools Domination
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 14, 2016
+Last Commit Date: Dec 15, 2016
 
 This is a simple dev tools exercise. We'll explore how to set _break points_
   in the browser debugger, and learn about various `console` methods that allow us
   to be more specific about the event being logged out (is it a warning, an error,
   a collection of data, etc.).
 
-## Guide:
+## Guide
 
 A guide isn't necessary for this exercise. In this challenge I made some *minor* changes
   when compared to Wes' original answer key, mostly to provide some additional clarification

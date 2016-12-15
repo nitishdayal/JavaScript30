@@ -1,6 +1,6 @@
 # Exercise 10: Hold Shift and Check Checkboxes
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 14, 2016
+Last Commit Date: Dec 15, 2016
 
 We're given an HTML page that displays a collection of `input` HTML elements
   of type `checkbox`, each followed by a `p` HTML element that will have it's
@@ -8,7 +8,7 @@ We're given an HTML page that displays a collection of `input` HTML elements
   JavaScript code to allow a user to select **multiple** items while holding down
   the shift key.
 
-## Guide:
+## Guide
 
 The answer key provided is flawed; open it up, hold down shift, and select the first
   item. **All** of the inputs become checked off! That's not good. So, once again,
