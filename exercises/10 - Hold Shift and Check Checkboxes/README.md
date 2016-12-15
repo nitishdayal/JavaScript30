@@ -39,6 +39,7 @@ The _event handler_ function will check to see if the 'shift' key was held down 
 **Steps:**
 
 - HTML
+
   1. Number each `input` element by giving them an `id` property, starting at 0.
       
         ```html
@@ -50,6 +51,7 @@ The _event handler_ function will check to see if the 'shift' key was held down 
         ```
 
 - JavaScript
+
   1. Declare an _immediately invoked anonymous function_ that will contain the rest
     of the JavaScript code, so as to avoid polluting the **global namespace**.
   
@@ -65,13 +67,13 @@ The _event handler_ function will check to see if the 'shift' key was held down 
   4. Iterate through the **NodeList** and add an _event listener_ to each element that will
     call upon a yet-to-be-defined _event handler_ function on a click event.
 
-        ```JavaScript
-        // The name of the function to be used as the event handler is your choice.
-        checkBoxes.forEach(
-          // In this example, the event handler function is called 'multiChecker'
-          checkbox => checkbox.addEventListener('click', multiChecker)
-        );
-        ```
+      ```JavaScript
+      // The name of the function to be used as the event handler is your choice.
+      checkBoxes.forEach(
+        // In this example, the event handler function is called 'multiChecker'
+        checkbox => checkbox.addEventListener('click', multiChecker)
+      );
+      ```
 
   5. Declare the _event handler_ function and allow it accept one parameter, the event:
        
