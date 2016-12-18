@@ -1,6 +1,6 @@
 # Exercise 11: Custom Video Player
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 15, 2016
+Last Commit Date: Dec 17, 2016
 
 When the HTML page is loaded in a browser, it displays a video player with controls
   for playing/pausing the video, scrolling through the video progress, skipping/
