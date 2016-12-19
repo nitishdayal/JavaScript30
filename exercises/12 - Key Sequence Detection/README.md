@@ -82,10 +82,10 @@ Declare a `constant` and define it as your secret code _in string format_. Decla
 5. Wrap your JavaScript logic in an _IIFE_ (immediately invoked function expression) so as to avoid
   polluting the **global namespace**:
   
-  ```JavaScript
-  (() => {
-  /* All of the previously written code goes inside here */
-  })(); /* <-- Call the function immediately (hence, immediately invoked function) */
-  ```
+    ```JavaScript
+    (() => {
+    /* All of the previously written code goes inside here */
+    })(); /* <-- Call the function immediately (hence, immediately invoked function) */
+    ```
   
 WOOOOOO UNICORNS! This wasn't too bad. Let's do another one. :) And another, and another, and another...

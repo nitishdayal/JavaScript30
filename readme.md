@@ -1,6 +1,6 @@
 # JavaScript30 - 30 Day JavaScript Challenge
 Nitish Dayal, Software & Applications Developer  
-Last Commit Date: Dec 15, 2016
+Last Commit Date: Dec 18, 2016
 
 > Course created by [Wes Bos](https://github.com/wesbos)  
 > Join the challenge (for free!) here - [JavaScript30](https://javascript30.com/account)
@@ -39,7 +39,7 @@ Completed written guides can be found in the corresponding challenge directory (
 9. [x] ~~[Dev Tools Domination](./exercises/09\ -\ Dev\ Tools\ Domination/)~~
 10. [x] ~~[Hold Shift and Check Checkboxes](./exercises/10\ -\ Hold\ Shift\ and\ Check\ Checkboxes/)~~
 11. [x] ~~[Custom Video Player](./exercises/11\ -\ Custom\ Video\ Player/)~~
-12. [ ] Key Sequence Detection
+12. [x] ~~[Key Sequence Detection](./exercises/12\ -\ Key\ Sequence\ Detection/)~~
 13. [ ] Slide in on Scroll
 14. [ ] JavaScript References vs. Copying
 15. [ ] LocalStorage
