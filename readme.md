@@ -42,7 +42,7 @@ Completed written guides can be found in the corresponding challenge directory (
 12. [x] ~~[Key Sequence Detection](./exercises/12\ -\ Key\ Sequence\ Detection/)~~
 13. [x] ~~[Slide in on Scroll](./exercises/13\ -\ Slide\ in\ on\ Scroll/)~~
 14. [x] ~~[JavaScript References vs. Copying](./exercises/14\ -\ JavaScript\ References\ VS\ Copying)~~
-15. [ ] LocalStorage
+15. [x] ~~[LocalStorage](./exercises/15\ -\ LocalStorage\)~~
 16. [ ] Mouse Move Shadow
 17. [ ] Sort Without Articles
 18. [ ] Adding Up Times with Reduce
