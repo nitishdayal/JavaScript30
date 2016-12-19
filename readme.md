@@ -1,6 +1,6 @@
 # JavaScript30 - 30 Day JavaScript Challenge
 Nitish Dayal, Software & Applications Developer  
-Last Commit Date: Dec 18, 2016
+Last Commit Date: Dec 19, 2016
 
 > Course created by [Wes Bos](https://github.com/wesbos)  
 > Join the challenge (for free!) here - [JavaScript30](https://javascript30.com/account)
@@ -41,7 +41,7 @@ Completed written guides can be found in the corresponding challenge directory (
 11. [x] ~~[Custom Video Player](./exercises/11\ -\ Custom\ Video\ Player/)~~
 12. [x] ~~[Key Sequence Detection](./exercises/12\ -\ Key\ Sequence\ Detection/)~~
 13. [x] ~~[Slide in on Scroll](./exercises/13\ -\ Slide\ in\ on\ Scroll/)~~
-14. [ ] JavaScript References vs. Copying
+14. [x] ~~[JavaScript References vs. Copying](./exercises/14\ -\ JavaScript\ References\ VS\ Copying)~~
 15. [ ] LocalStorage
 16. [ ] Mouse Move Shadow
 17. [ ] Sort Without Articles
