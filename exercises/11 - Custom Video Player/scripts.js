@@ -26,8 +26,7 @@
   progress.addEventListener('mouseup', () => mousedown = false)
 
   skipButtons.forEach(button => {
-    button.addEventListener(
-      'click', () => video.currentTime += parseFloat(button.dataset.skip))
+    button.addEventListener('click', () => video.currentTime += parseFloat(button.dataset.skip))
   })
 
   ranges.forEach(range => {
