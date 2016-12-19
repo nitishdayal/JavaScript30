@@ -43,53 +43,54 @@
   </div>
 
   <script>
-    const addItems = document.querySelector('.add-items'),
-      itemsList = document.querySelector('.plates'),
-      items = JSON.parse(localStorage.getItem('dishes')) || [];
+    (() => {
+      const addItems = document.querySelector('.add-items'),
+        itemsList = document.querySelector('.plates'),
+        items = JSON.parse(localStorage.getItem('dishes')) || [];
 
-    const addItem = (e) => {
-      e.preventDefault()
+      const addItem = (e) => {
+        e.preventDefault()
 
-      const text = (e.target.querySelector('[name="item"]')).value,
-        item = {
-          text,
-          done: false
-        };
+        const text = (e.target.querySelector('[name="item"]')).value,
+          item = {
+            text,
+            done: false
+          };
 
-      items.push(item)
-      populateList(items, itemsList)
-      localStorage.setItem('dishes', JSON.stringify(items))
-      e.target.reset()
-    }
+        items.push(item)
+        populateList(items, itemsList)
+        localStorage.setItem('dishes', JSON.stringify(items))
+        e.target.reset()
+      }
 
-    const populateList = (items, itemsList) => {
-      if (!(items instanceof Array)) return false
+      const populateList = (items, itemsList) => {
+        if (!(items instanceof Array)) return false
 
-      itemsList.innerHTML = items.map((item, i) => {
-        return `
+        itemsList.innerHTML = items.map((item, i) => {
+          return `
           <li>
             <input type="checkbox" data-index=${i} id="item${i}" ${item.done ? 'checked' : ''} />
             <label for="item${i}">${item.text}</label>
           </li>
         `
-      }).join('')
-    }
+        }).join('')
+      }
 
-    const toggleDone = (e) => {
-      if (!e.target.matches('input')) return;
+      const toggleDone = (e) => {
+        if (!e.target.matches('input')) return;
 
-      const element = e.target,
-        idx = element.dataset.index;
+        const element = e.target,
+          idx = element.dataset.index;
 
-      items[idx].done = !items[idx].done
-      localStorage.setItem('dishes', JSON.stringify(items))
-    }
+        items[idx].done = !items[idx].done
+        localStorage.setItem('dishes', JSON.stringify(items))
+      }
 
-    addItems.addEventListener('submit', addItem)
-    itemsList.addEventListener('click', toggleDone)
+      addItems.addEventListener('submit', addItem)
+      itemsList.addEventListener('click', toggleDone)
 
-    document.onload = populateList(items, itemsList)
-
+      document.onload = populateList(items, itemsList)
+    })();
   </script>
 
 
