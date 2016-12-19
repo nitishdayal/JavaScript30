@@ -40,7 +40,7 @@ Completed written guides can be found in the corresponding challenge directory (
 10. [x] ~~[Hold Shift and Check Checkboxes](./exercises/10\ -\ Hold\ Shift\ and\ Check\ Checkboxes/)~~
 11. [x] ~~[Custom Video Player](./exercises/11\ -\ Custom\ Video\ Player/)~~
 12. [x] ~~[Key Sequence Detection](./exercises/12\ -\ Key\ Sequence\ Detection/)~~
-13. [ ] Slide in on Scroll
+13. [x] ~~[Slide in on Scroll](./exercises/13\ -\ Slide\ in\ on\ Scroll/)~~
 14. [ ] JavaScript References vs. Copying
 15. [ ] LocalStorage
 16. [ ] Mouse Move Shadow
