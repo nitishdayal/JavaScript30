@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Shadow</title>
+</head>
+
+<body>
+
+  <div class="hero">
+    <h1 contenteditable>🔥WOAH!</h1>
+  </div>
+
+  <style>
+  html {
+    color:black;
+    font-family: sans-serif;
+  }
+
+  .hero {
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+  }
+
+
+  h1 {
+    text-shadow: 10px 10px 0 rgba(0,0,0,1);
+    font-size: 100px;
+  }
+  </style>
+
+<script>
+  (() => {
+    const hero = document.querySelector('.hero'),
+      text = hero.querySelector('h1'),
+      walk = 500;
+
+    const shadow = (e) => {
+      // Get the width & height properties of the 'hero' div
+      const { offsetWidth: width, offsetHeight: height } = hero;
+      // Get the distance of the mouse from the event's target node in X and Y
+      // coordinates
+      let { offsetX: x, offsetY: y } = e;
+
+
+      // If the element that the mouse is hovering over is different than the event's target element...
+      if (e.currentTarget !== e.target) {
+        // Increment the x & y coordinates by the distance between the element and the event's target
+        // element on the x & y axis.
+        x += e.target.offsetLeft;
+        y += e.target.offsetTop;
+      }
+
+      // Calculate the stretch distance for the element's shadow
+      // on the x & y axis
+      const xWalk = Math.round((x / width * walk) - (walk / 2)),
+        yWalk = Math.round((y / height * walk) - (walk / 2));
+
+      // Update the 'textShadow' style property of the h1 element
+      text.style.textShadow = `
+      ${xWalk}px ${yWalk}px 0 rgba(255,0,255,0.7),
+      ${-xWalk}px ${yWalk}px 0 rgba(0,255,255,0.7),
+      ${yWalk}px ${-xWalk}px 0 rgba(0,255,0,0.7),
+      ${-yWalk}px ${-xWalk}px 0 rgba(0,0,255,0.7)
+      `;
+
+    }
+    // Attach event listener
+    hero.addEventListener('mousemove', shadow);
+  })();
+
+</script>
+</body>
+
+</html>
