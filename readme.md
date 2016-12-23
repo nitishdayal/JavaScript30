@@ -43,7 +43,7 @@ Completed written guides can be found in the corresponding challenge directory (
 13. [x] ~~[Slide in on Scroll](./exercises/13\ -\ Slide\ in\ on\ Scroll/)~~
 14. [x] ~~[JavaScript References vs. Copying](./exercises/14\ -\ JavaScript\ References\ VS\ Copying)~~
 15. [x] ~~[LocalStorage](./exercises/15\ -\ LocalStorage/)~~
-16. [x] ~~[Mouse Move Shadow](./exercises/16\ Mouse\ Move\ Shadow/)~~
+16. [x] ~~[Mouse Move Shadow](./exercises/16\ -\ Mouse\ Move\ Shadow/)~~
 17. [ ] Sort Without Articles
 18. [ ] Adding Up Times with Reduce
 19. [ ] Webcam Fun
