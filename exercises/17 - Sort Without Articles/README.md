@@ -49,7 +49,7 @@ Declare a `const` variable and define it as a _regular expression pattern_
   the sortedBands array stored within _list items_.
 
     ```JavaScript
-    document.querySelector('#bands).innerHTML = 
+    document.querySelector('#bands').innerHTML = 
       sortedBands
         .map(band => `${<li>${band}</li>`})
         .join('')
