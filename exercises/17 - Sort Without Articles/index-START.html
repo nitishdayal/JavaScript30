@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Sort Without Articles</title>
 </head>
+
 <body>
 
   <style>
@@ -40,13 +42,37 @@
 
   </style>
 
-  <ul id="bands"></ul>
+<ul id="bands"></ul>
 
 <script>
-const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+  const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean',
+    'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts',
+    'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog']
 
+
+  // Declare constant variable and define as new Regular Expression object
+  const namePrefixes = new RegExp('^(a |the |an )', 'i')
+
+  // Declare constant variable and define as an arrow function which
+  // accepts a 'bandName' property and returns that provided argument
+  // after replacing values that match the previously defined
+  // regex pattern with an empty string and removing whitespace on either end
+  const stripArticles = (bandName) => bands[0].replace(namePrefixes, '').trim()
+
+  // Declare constant variable and define as the result of sorting through the 'bands'
+  // array depending on the band name excluding prefixes ('A', 'The', 'An')
+  const sortedBands = bands.sort((a, b) => stripArticles(a) > stripArticles(b) ? 1 : -1);
+
+  // Select the #bands unordered list and update the inner html
+  // to be the values in the sortedBands array stored within
+  // list items.
+  document.querySelector("#bands").innerHTML =
+    sortedBands
+      .map(band => `<li>${band}</li>`)
+      .join('')
 
 </script>
 
 </body>
+
 </html>
