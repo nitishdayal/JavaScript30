@@ -44,7 +44,7 @@ Completed written guides can be found in the corresponding challenge directory (
 14. [x] ~~[JavaScript References vs. Copying](./exercises/14\ -\ JavaScript\ References\ VS\ Copying)~~
 15. [x] ~~[LocalStorage](./exercises/15\ -\ LocalStorage/)~~
 16. [x] ~~[Mouse Move Shadow](./exercises/16\ -\ Mouse\ Move\ Shadow/)~~
-17. [ ] Sort Without Articles
+17. [x] ~~[Sort Without Articles](./exercises/17\ -\ Sort\ Without\ Articles/)~~
 18. [ ] Adding Up Times with Reduce
 19. [ ] Webcam Fun
 20. [ ] Speech Detection
