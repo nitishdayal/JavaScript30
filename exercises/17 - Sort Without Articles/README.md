@@ -34,7 +34,7 @@ Declare a `const` variable and define it as a _regular expression pattern_
   string and removing any leading or trailing whitespace.
 
     ```JavaScript
-    const stripPrefixes = (bandName) => bandName.replace(namesPrefixes, '').trim()
+    const stripPrefixes = (bandName) => bandName.replace(namesPrefix, '').trim()
     ```
 
 3. Declare a `const` and define it as the **result** of sorting through the `bands`
