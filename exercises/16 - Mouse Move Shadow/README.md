@@ -1,4 +1,4 @@
-# Exercise 15: Mouse Move Shadow
+# Exercise 16: Mouse Move Shadow
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
 Last Commit Date: Dec 23, 2016
 
