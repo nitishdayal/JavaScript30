@@ -1,6 +1,6 @@
 # JavaScript30 - 30 Day JavaScript Challenge
 Nitish Dayal, Software & Applications Developer  
-Last Commit Date: Dec 23, 2016
+Last Commit Date: Dec 24, 2016
 
 > Course created by [Wes Bos](https://github.com/wesbos)  
 > Join the challenge (for free!) here - [JavaScript30](https://javascript30.com/account)
@@ -45,7 +45,7 @@ Completed written guides can be found in the corresponding challenge directory (
 15. [x] ~~[LocalStorage](./exercises/15\ -\ LocalStorage/)~~
 16. [x] ~~[Mouse Move Shadow](./exercises/16\ -\ Mouse\ Move\ Shadow/)~~
 17. [x] ~~[Sort Without Articles](./exercises/17\ -\ Sort\ Without\ Articles/)~~
-18. [ ] Adding Up Times with Reduce
+18. [x] ~~[Adding Up Times with Reduce](./exercises/18\ -\ Adding\ Up\ Times\ with\ Reduce/)~~
 19. [ ] Webcam Fun
 20. [ ] Speech Detection
 21. [ ] Geolocation
