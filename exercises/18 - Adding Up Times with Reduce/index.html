@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Videos</title>
 </head>
+
 <body>
   <ul class="videos">
     <li data-time="5:43">
@@ -181,7 +183,48 @@
       Video 58
     </li>
 
-<script>
-</script>
+    <script>
+      (() => {
+        // Hide all the list items because I don't want to see all that nonsense
+        // document.querySelectorAll('[data-time]').forEach(listItem => listItem.hidden = true)
+
+        // Declare a constant and define as an ARRAY of all items with a 'data-key'
+        // property (used spread operator to create array)
+        const allTimes = [...document.querySelectorAll('[data-time]')]
+
+        /** Declare a constant and define as the return value of mapping over each item
+          * in the array TWICE and reducing the result of those maps to a single numeric
+          * value.
+          */
+        const seconds = allTimes
+          .map(listItem => listItem.dataset.time) // Get the 'data-time' property
+          .map(timeValue => {
+            /** Declare constants minutes & seconds using array destructuring
+              * and define as the result of splitting the 'data-time' property
+              * a list item at ':' and parsing the returned two strings
+              * as float numbers
+              */
+            const [minutes, seconds] = timeValue.split(':').map(parseFloat)
+            return minutes * 60 + seconds // Return the total seconds
+          })
+          // Add up all the seconds
+          .reduce((runningTotal, seconds) => runningTotal + seconds)
+
+        /** Calculate hours by dividing total seconds by 3600 (seconds in a minute (60)
+          * multiplied by minutes in an hour (60)) and round the value DOWN before
+          * returning
+          */
+        const hours = Math.floor(seconds / 3600)
+        // Set variable to remainder of seconds after calculating hours
+        let secondsLeft = seconds % 3600
+        // Calculate remaining minutes
+        const minutes = Math.floor(secondsLeft / 60)
+        // Calculate remaining seconds
+        secondsLeft %= 60
+        // Log 'em out!
+        console.log(`Total video time: ${hours} hours, ${minutes} minutes, and ${secondsLeft} seconds`)
+      })();
+    </script>
 </body>
+
 </html>
