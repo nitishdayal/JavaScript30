@@ -41,63 +41,64 @@ WOO! Now that you've got an idea of how we're going to approach this challenge, 
 
   1. Declare a `const` and define as an _array of HTML Node elements_ with a `data-time` property.
 
-      ```JavaScript
-      // Option 1. Using the spread operator to convert the NodeList into an array
-      const allTimes = [...document.querySelectorAll('[data-time]')]
+    ```JavaScript
+    // Option 1. Using the spread operator to convert the NodeList into an array
+    const allTimes = [...document.querySelectorAll('[data-time]')]
 
-      // Option 2. Converting the NodeList into an array using the `Array.from()` methods
-      const allTimes = Array.from(document.querySelectorAll('[data-time]'))
-      ```
+    // Option 2. Converting the NodeList into an array using the `Array.from()` methods
+    const allTimes = Array.from(document.querySelectorAll('[data-time]'))
+    ```
 
 2. Declare a `const` and define it as the _return value_ of **mapping** over each item
   in the array TWICE, and **reducing** the result of those maps to a single integer value.
 
-      ```JavaScript
-      const seconds = allTimes
-          .map(listItem => listItem.dataset.time) // Get the 'data-time' property
-          .map(timeValue => {
-            /** Declare constants minutes & seconds using array destructuring
-              * and define as the result of splitting the 'data-time' property
-              * a list item at ':' and parsing the returned two strings
-              * as float numbers
-              */
-            const [minutes, seconds] = timeValue.split(':').map(parseFloat)
-            return minutes * 60 + seconds // Return the total seconds
-          })
-          // Add up all the seconds
-          .reduce((runningTotal, seconds) => runningTotal + seconds)
-      ```
+    ```JavaScript
+    const seconds = allTimes
+        .map(listItem => listItem.dataset.time) // Get the 'data-time' property
+        .map(timeValue => {
+          /** Declare constants minutes & seconds using array destructuring
+            * and define as the result of splitting the 'data-time' property
+            * a list item at ':' and parsing the returned two strings
+            * as float numbers
+            */
+          const [minutes, seconds] = timeValue.split(':').map(parseFloat)
+          return minutes * 60 + seconds // Return the total seconds
+        })
+        // Add up all the seconds
+        .reduce((runningTotal, seconds) => runningTotal + seconds)
+    ```
+    
 3. Declare a `const` and define it as the seconds converted to hours.
 
-      ```JavaScript
-      const hours = Math.floor(seconds / 3600)
-      ```
+    ```JavaScript
+    const hours = Math.floor(seconds / 3600)
+    ```
 
 4. Declare a `let` variable and define it as the remaining seconds after 
   calculating hours.
 
-      ```JavaScript
-      let secondsLeft = seconds % 3600
-      ```
+    ```JavaScript
+    let secondsLeft = seconds % 3600
+    ```
 
 5. Declare a `const` and define it as the remaining seconds converted to minutes.
 
-      ```JavaScript
-      const minutes = Math.floor(secondsLeft / 60)
-      ```
+    ```JavaScript
+    const minutes = Math.floor(secondsLeft / 60)
+    ```
 
 6. Update the value of the `let` variable to reflect the remaining seconds after
   calculating the minutes.
 
-      ```JavaScript
-      secondsLeft %= 60
-      ```
+    ```JavaScript
+    secondsLeft %= 60
+    ```
 
 7. Log out the values.
 
-      ```JavaScript
-      console.log(`Total video time: ${hours} hours, ${minutes} minutes, and ${secondsLeft} seconds`)
-      ```
+    ```JavaScript
+    console.log(`Total video time: ${hours} hours, ${minutes} minutes, and ${secondsLeft} seconds`)
+    ```
 If your result is 4 hours, 58 minutes, and 58 seconds, you did it! WOOOOOO! Learning
   how to effectively use these array methods can greatly increase the clarity of your code
   and simplify your workflow. Learn them well!
