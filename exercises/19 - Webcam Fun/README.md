@@ -1,4 +1,4 @@
-# Exercise 18: Adding Up Times With Reduce
+# Exercise 19: Webcam Fun
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
 Last Commit Date: Dec 30, 2016
 
