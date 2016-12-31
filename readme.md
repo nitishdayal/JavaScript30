@@ -46,7 +46,7 @@ Completed written guides can be found in the corresponding challenge directory (
 16. [x] ~~[Mouse Move Shadow](./exercises/16\ -\ Mouse\ Move\ Shadow/)~~
 17. [x] ~~[Sort Without Articles](./exercises/17\ -\ Sort\ Without\ Articles/)~~
 18. [x] ~~[Adding Up Times with Reduce](./exercises/18\ -\ Adding\ Up\ Times\ with\ Reduce/)~~
-19. [ ] Webcam Fun
+19. [x] ~~[Webcam Fun](./exercises/19\ -\ Webcam\ Fun/)~~
 20. [ ] Speech Detection
 21. [ ] Geolocation
 22. [ ] Follow Along Link Highlighter
