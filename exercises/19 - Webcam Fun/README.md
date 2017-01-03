@@ -95,47 +95,47 @@ The last function we'll want to create is one that will bring functionality to t
           })
           .catch(err => {
             console.error(`OH NO!!!`, err);
-          });
-      }
+          })
+      };
     ```
 
 2. Declare a `const` variable `paintToCanvas` and define it as an arrow function.
 
     ```JavaScript
-      const paintToCanvas = () => { /* ... */}
+      const paintToCanvas = () => { /* ... */};
     ```
 
-      - In the body of this function, declare two `const` variables and define them
-        as the `video` element's width and height, and update the `canvas` width and height
-        to reflect those values.
+       - In the body of this function, declare two `const` variables and define them
+         as the `video` element's width and height, and update the `canvas` width and height
+         to reflect those values.
 
-          ```JavaScript
+           ```JavaScript
           const paintToCanavas = () => {
             const width = video.videoWidth;
             const height = video.videoHeight;
             canvas.width = width;
             canvas.height = height; 
 
-            /* More to do... */
-          }
-          ```
+             /* More to do... */
+           };
+           ```
 
-      - Still in the body of the function, return the _interval ID_ of a `setInterval()`
-        function call, and within the body of that function call, draw the current `video`
-        element on to the `canvas.
+    - Still in the body of the function, return the _interval ID_ of a `setInterval()`
+      function call, and within the body of that function call, draw the current `video`
+      element on to the `canvas.`
 
-          ```JavaScript
-            let paintToCanavas = () => {
-              const width = video.videoWidth;
-              const height = video.videoHeight;
-              canvas.width = width;
-              canvas.height = height; 
+        ```JavaScript
+          let paintToCanavas = () => {
+            const width = video.videoWidth;
+            const height = video.videoHeight;
+            canvas.width = width;
+            canvas.height = height; 
 
-              return setInterval(() => {
-                ctx.drawImage(video, 0, 0, width, height);
-              }, 16);
-            }
-          ```
+            return setInterval(() => {
+              ctx.drawImage(video, 0, 0, width, height);
+            }, 16);
+          };
+        ```
 
 3. Declare a `const` variable `takePhoto` and define it as an arrow function that will
   play the `audio` element on the HTML page, create a link which targets a _data URI_
@@ -154,22 +154,22 @@ The last function we'll want to create is one that will bring functionality to t
         link.setAttribute('download', 'handsome');
         link.innerHTML = `<img src="${data}" alt="Handsome Man" />`;
         strip.insertBefore(link, strip.firsChild);
-      }
+      };
     ```
 
 4. Declare a `const` variable `greenScreen` and define it as an _arrow function_ that will
   accept an argument `pixels`.
 
     ```JavaScript
-    const greenScreen = (pixels) => { /*...*/ }
+      const greenScreen = (pixels) => { /*...*/ };
     ```
 
-      - In the function body, declare a `const` variables `levels` and define it as an empty
-        object. Iterate through a _NodeList_ of all `input` elements within the div with class
-        `rgb` and set a key in the `levels` object as a given input's `name` property, and
-        set the value to be the given input's `value`.
+    - In the function body, declare a `const` variables `levels` and define it as an empty
+      object. Iterate through a _NodeList_ of all `input` elements within the div with class
+      `rgb` and set a key in the `levels` object as a given input's `name` property, and
+      set the value to be the given input's `value`.
 
-          ```JavaScript
+        ```JavaScript
           /* In function body */
 
           const levels = {};
@@ -177,13 +177,13 @@ The last function we'll want to create is one that will bring functionality to t
           document.querySelectorAll('.rgb input').forEach((input) => {
             levels[input.name] = input.value;
           });
-          ```
+        ```
 
-      - Update the values of the pixels in the image so that we remove all RGB
-        values that are within the range defined by the user, and return the given
-        argument.
+    - Update the values of the pixels in the image so that we remove all RGB
+      values that are within the range defined by the user, and return the given
+      argument.
 
-          ```JavaScript
+        ```JavaScript
           /* In function body */
           for (i = 0; i < pixels.data.length; i += 4) {
             red = pixels.data[i + 0];
@@ -201,8 +201,8 @@ The last function we'll want to create is one that will bring functionality to t
               pixels.data[i + 3] = 0;
             }
           }
-          return pixels
-          ```
+          return pixels;
+        ```
 
 5. Update the `getVideo` function so that the setInterval method within the function body
   creates a variable defined as the _underlying pixel data_, passes that variable into the
