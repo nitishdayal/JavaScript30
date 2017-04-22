@@ -10,9 +10,33 @@
   </div>
 
 <script>
-  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  (() => {
+    window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
+    const recognition = new window.SpeechRecognition()
+    recognition.interimResults = true
 
+    const words = document.querySelector('.words')
+    let newParagraphElement = document.createElement('p')
+    words.appendChild(newParagraphElement)
+
+    recognition.addEventListener('result', e => {
+      const transcript = Array.from(e.results)
+        .map(results => results[0])
+        .map(result => result.transcript)
+        .join('')
+
+      newParagraphElement.textContent = transcript
+      if (e.results[0].isFinal) {
+        newParagraphElement = document.createElement('p')
+        words.appendChild(newParagraphElement)
+      }
+      
+    })
+
+    recognition.addEventListener('end', recognition.start)
+    recognition.start()
+  })();
 </script>
 
 

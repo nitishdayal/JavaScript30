@@ -12,7 +12,7 @@
         video.play();
       })
       .catch(err => {
-        console.error(`OH NO!!!`, err);
+        console.error(`OH NO!!! ${err}`);
       });
   }
 

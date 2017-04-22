@@ -61,7 +61,7 @@
     const speed = document.querySelector('.speed-value');
 
     navigator.geolocation.watchPosition((data) => {
-      console.log(data);
+      console.info(data);
       speed.textContent = data.coords.speed;
       arrow.style.transform = `rotate(${data.coords.heading}deg)`;
     }, (err) => {
