@@ -19,49 +19,46 @@
 
   <style>
     html {
-      background:#018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
-      background-size:cover;
-      font-family:'helvetica neue';
+      background: #018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
+      background-size: cover;
+      font-family: 'helvetica neue';
       text-align: center;
       font-size: 10px;
     }
-
+    
     body {
       font-size: 2rem;
-      display:flex;
-      flex:1;
+      display: flex;
+      flex: 1;
       min-height: 100vh;
       align-items: center;
     }
-
+    
     .clock {
       width: 30rem;
       height: 30rem;
-      border:20px solid white;
-      border-radius:50%;
-      margin:50px auto;
+      border: 20px solid white;
+      border-radius: 50%;
+      margin: 50px auto;
       position: relative;
-      padding:2rem;
-      box-shadow:
-        0 0 0px 4px rgba(0,0,0,0.1),
-        inset 0 0 0 3px #EFEFEF,
-        inset 0 0 10px black,
-        0 0 10px rgba(0,0,0,0.2);
+      padding: 2rem;
+      box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #EFEFEF, inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
     }
-
+    
     .clock-face {
       position: relative;
       width: 100%;
       height: 100%;
-      transform: translateY(-3px); /* account for the height of the clock hands */
+      transform: translateY(-3px);
+      /* account for the height of the clock hands */
     }
-
+    
     .hand {
-      width:50%;
-      height:6px;
-      background:black;
+      width: 50%;
+      height: 6px;
+      background: black;
       position: absolute;
-      top:50%;
+      top: 50%;
       transform-origin: 100%;
       transform: rotate(90deg);
       transition: all 0.05s;
@@ -70,39 +67,38 @@
 
   </style>
 
-<script>
-  /*  GOAL: Write the JavaScript code necessary to transform the HTML elements
+  <script>
+    /*  GOAL: Write the JavaScript code necessary to transform the HTML elements
    *  on the page into a functioning clock.
    */
 
-  // Create references to the HTML elements that we want to transform
-  const secondHand = document.querySelector('.second-hand');
-  const minuteHand = document.querySelector('.min-hand');
-  const hourHand = document.querySelector('.hour-hand')
+    // Create references to the HTML elements that we want to transform
+    const
+      secondHand = document.querySelector('.second-hand'),
+      minuteHand = document.querySelector('.min-hand'),
+      hourHand = document.querySelector('.hour-hand')
+    const calcDegrees = (int, div) => ((int / div) * 360) + 90;
+    // Call function once every second
+    setInterval(() => {
 
-  function setDate() {
-    const now = new Date(); // Create new Date object
+      // Create new Date object
+      const now = new Date();
 
-    // Get current seconds, calculate the degree shift, and apply the styling
-    const seconds = now.getSeconds();
-    const secondHandDegrees = ((seconds / 60) * 360) + 90;
-    secondHand.style.transform = `rotate(${secondHandDegrees}deg)`;
+      // Get current seconds, minutes, & hours and calculate the degree shift
+      const
+        secondHandDegrees = calcDegrees(now.getSeconds(), 60),
+        minuteHandDegrees = calcDegrees(now.getMinutes(), 60),
+        hourHandDegrees = calcDegrees(now.getHours(), 12);
 
-    // Get current minutes, calculate the degree shift, and apply the styling
-    const minutes = now.getMinutes();
-    const minuteHandDegrees = ((minutes / 60) * 360) + 90;
-    minuteHand.style.transform = `rotate(${minuteHandDegrees}deg)`;
 
-    // Hour hand transformation can utilize the data gathered for the minute
-    // hand, with a minor alteration in how the degree shift is calculated.
-    const hourHandDegrees = ((minutes / 12) * 360) + 90;
-    hourHand.style.transform = `rotate(${hourHandDegrees}deg)`;
-  }
+      // Apply rotation to the clock hands corresponding with current time value
+      secondHand.style.transform = `rotate(${secondHandDegrees}deg)`;
+      minuteHand.style.transform = `rotate(${minuteHandDegrees}deg)`;
+      hourHand.style.transform = `rotate(${hourHandDegrees}deg)`;
 
-  // Call function once every second
-  setInterval(setDate, 1000);
 
-</script>
+    }, 1000);
+  </script>
 </body>
 
 </html>

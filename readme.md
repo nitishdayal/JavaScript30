@@ -14,10 +14,10 @@ This repository contains my written guides for the JavaScript30 course by
   refer back to. Orrr you're in a library and don't have headphones. Who knows! If
   you want some documentation to go along with those sweet Wes Bos vids, here you go.
 
-**DISCLAIMER:** My approach to some of the challenges vary from the provided answers (found in
+**DISCLAIMER:** My approach to some of the challenges will vary from the provided answers (found in
   the files that end with `-FINISHED` on the main repo). Some of the tweaks are just to
   include various 'best practices' and some have huge chunks of differences. I try to provide
-  thorough explanations when I do sway from the path and explain why I chose to do so, but
+  thorough explanations when I do stray from the path and explain why I chose to do so, but
   I want to make it clear that some of these guides don't go hand-in-hand with the videos.
 
 ## About
