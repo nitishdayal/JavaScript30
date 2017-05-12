@@ -11,14 +11,14 @@ Given a web page with an analog clock created with CSS, write the
 
 The HTML file has 3 `div` elements which correspond with the second, minute, and
     hour hand on a clock
-    
-    ```html
-        <!-- ...previous elements -->
-            <div class="hand hour-hand"></div>
-            <div class="hand min-hand"></div>
-            <div class="hand second-hand"></div>
-        <!-- next elements... -->
-    ```
+
+```html
+<!-- ...previous elements -->
+    <div class="hand hour-hand"></div>
+    <div class="hand min-hand"></div>
+    <div class="hand second-hand"></div>
+<!-- next elements... -->
+```
 
 The necessary JavaScript code shouldn't be too crazy;
     we'll create references to these elements and dynamically
@@ -62,7 +62,7 @@ The necessary JavaScript code shouldn't be too crazy;
 
         - Divide the current numerical value of the clock hand by it's max possible value to get the rotation as
         a percentage, then multiply the result of that by 360 (each hand can rotate 360 degrees) to convert
-        the value from a percentage to an integer, and increase that result by another 90 degrees to compensate 
+        the value from a percentage to an integer, and increase that result by another 90 degrees to compensate
         for the shift originally applied by the CSS styling on page load.
 
             ```javascript
