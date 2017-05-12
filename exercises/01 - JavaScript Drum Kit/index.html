@@ -75,7 +75,10 @@
 
         keyelement.classList.add('playing');
 
-        soundclip.currentTime = 0; 
+        // Ensures that the sound clip always plays from the beginning. Otherwise,
+        // if the 'a' key is pressed twice rapidly, the soundclip will only play through
+        // once.
+        soundclip.currentTime = 0;
 
         soundclip.play(); // Play sound
       }
@@ -89,6 +92,9 @@
       // Find all elements in the document with a class 'key'
       const keys = document.querySelectorAll('.key');
 
+      // Listen for any `keydown` events that occur on this browser window instance (this page)
+      // When a `keydown` event is observered, trigger the `playSound` function, passing in the
+      // `keydown` event as the argument (e)
       window.addEventListener('keydown', playSound);
 
       keys.forEach(key =>
