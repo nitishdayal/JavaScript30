@@ -1,6 +1,6 @@
 # Exercise 4: Array Cardio
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 12, 2016
+Last Commit Date: May 12, 2017
 
 Not really much of a guide necessary for this one. The challenge is pretty
 well documented as far as what's expected from the developer; use

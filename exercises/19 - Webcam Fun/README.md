@@ -1,6 +1,6 @@
 # Exercise 19: Webcam Fun
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 30, 2016
+Last Commit Date: May 12, 2017
 
 We're given an HTML page with a button labeled 'Take Photo' which calls upon a `takePhoto()`
   function on a `click` event, a collection of `input` elements of type `range` with RGB min/max

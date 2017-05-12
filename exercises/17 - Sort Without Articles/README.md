@@ -1,6 +1,6 @@
 # Exercise 17: Sort Without Articles
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 23, 2016
+Last Commit Date: May 12, 2017
 
 We're given an HTML page with an _unordered list_, and an _array of string
   values_ in the `script` tag. Sort the values in the array **excluding

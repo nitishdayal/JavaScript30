@@ -1,6 +1,6 @@
 # Exercise 7: Array Cardio Day 2
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 12, 2016
+Last Commit Date: May 12, 2017
 
 More fun with Array methods! Much like the previous Array Cardio exercise, the 
   requirements are pretty well documented. This exercise utilizes the following

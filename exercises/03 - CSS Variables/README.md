@@ -1,6 +1,6 @@
 # Exercise 3: CSS Variables
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 10, 2016
+Last Commit Date: May 12, 2017
 
 The web page provided in this exercise displays an image, and has 3 form inputs
   from which the user can manipulate the padding, blur amount, and background

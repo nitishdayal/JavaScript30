@@ -1,6 +1,6 @@
 # Exercise 6: Type Ahead AJAX
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 12, 2016
+Last Commit Date: May 12, 2017
 
 We are given a web page with an `input` HTML element in which the user can insert
   text, and an `unordered list` below that `input` which will display cities & states

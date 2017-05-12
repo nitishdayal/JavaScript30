@@ -1,6 +1,6 @@
 # Exercise 15: LocalStorage
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 19, 2016
+Last Commit Date: May 12, 2017
 
 The web page simulates a restaurant's menu. The user should be able to
   add new dishes to the list using the `form` HTML element without having

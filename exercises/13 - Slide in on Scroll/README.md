@@ -1,6 +1,6 @@
 # Exercise 13: Slide In On Scroll
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 19, 2016
+Last Commit Date: May 12, 2017
 
 Given an HTML document with multiple paragraphs and images, write the necessary
   JavaScript code to slide the images into view when the user scrolls to a point

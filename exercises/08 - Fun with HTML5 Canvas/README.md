@@ -1,6 +1,6 @@
 # Exercise 8: Fun With HTML5 Canvas
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 14, 2016
+Last Commit Date: May 12, 2017
 
 We're given an HTML page with a `canvas` element in which the user should be able
   to click and drag their mouse to draw. When the user clicks+drags their mouse, 

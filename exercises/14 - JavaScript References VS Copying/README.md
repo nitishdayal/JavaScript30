@@ -1,6 +1,6 @@
 # Exercise 14: JavaScript Reference vs Copying
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 19, 2016
+Last Commit Date: May 12, 2017
 
 No guide necessary! We're learning about JavaScript variable referencing vs.
   copying. If you want a full-blown explanation, take a look at [chapter 11, section

@@ -1,6 +1,6 @@
 # Exercise 5: Flex Panel Gallery
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 12, 2016
+Last Commit Date: May 12, 2017
 
 We are given a web page with five `div` HTML elements with a class `panels`, 
   each containing three `p` HTML elements with some text. These five `div` elements 

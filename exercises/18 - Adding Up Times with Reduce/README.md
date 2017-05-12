@@ -1,6 +1,6 @@
 # Exercise 18: Adding Up Times With Reduce
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 24, 2016
+Last Commit Date: May 12, 2017
 
 The HTML document contains an _unordered list_ with multiple _list items_, each
   with a `data-time` which reflect a time in minutes and seconds. Our goal is to

@@ -1,6 +1,6 @@
 # Exercise 12: Key Sequence Detection
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 18, 2016
+Last Commit Date: May 12, 2017
 
 We're given an HTML document with...basically nothing. There's a `script` tag in the
   document header that loads a JavaScript file from [Cornify.com](https://www.cornify.com)

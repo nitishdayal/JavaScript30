@@ -1,6 +1,6 @@
 # Exercise 16: Mouse Move Shadow
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 23, 2016
+Last Commit Date: May 12, 2017
 
 We're given an HTML document with a `div` element containing an `h1` element.
   The `h1` element has a `textShadow` _style property_ which we want to manipulate

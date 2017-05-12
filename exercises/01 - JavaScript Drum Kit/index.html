@@ -66,7 +66,7 @@
       * and then remove that class in order to reset the element to it's original state.
       */
 
-    (function () {
+    (()=> {
       const playSound = (e) => {
         const soundclip = document.querySelector(`audio[data-key="${e.keyCode}"]`);
         const keyelement = document.querySelector(`.key[data-key="${e.keyCode}"]`);
@@ -75,9 +75,9 @@
 
         keyelement.classList.add('playing');
 
-        soundclip.currentTime = 0; // Play sound
+        soundclip.currentTime = 0; 
 
-        soundclip.play();
+        soundclip.play(); // Play sound
       }
 
       const removeTransition = (e) => {
@@ -95,8 +95,7 @@
         key.addEventListener(
           'transitionend',
           (e) => removeTransition.call(key, e)
-        )
-      );
+        ));
     })();
   </script>
 

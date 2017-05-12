@@ -1,6 +1,6 @@
 # Exercise 9: Dev Tools Domination
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 15, 2016
+Last Commit Date: May 12, 2017
 
 This is a simple dev tools exercise. We'll explore how to set _break points_
   in the browser debugger, and learn about various `console` methods that allow us

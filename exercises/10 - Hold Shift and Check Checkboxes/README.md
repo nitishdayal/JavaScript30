@@ -1,6 +1,6 @@
 # Exercise 10: Hold Shift and Check Checkboxes
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
-Last Commit Date: Dec 15, 2016
+Last Commit Date: May 12, 2017
 
 We're given an HTML page that displays a collection of `input` HTML elements
   of type `checkbox`, each followed by a `p` HTML element that will have it's
