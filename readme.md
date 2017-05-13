@@ -3,7 +3,7 @@
 Nitish Dayal, Software & Applications Developer  
 Last Commit Date: May 12, 2017
 
-> Course created by [Wes Bos](https://github.com/wesbos)  
+> Course created by [Wes Bos](https://github.com/wesbos)
 > Join the challenge (for free!) here - [JavaScript30](https://javascript30.com/account)
 
 This repository contains my written guides for the JavaScript30 course by
@@ -22,7 +22,7 @@ This repository contains my written guides for the JavaScript30 course by
 
 ## About
 
-Build 30 things in 30 days with vanilla JavaScript; no frameworks, libraries, etc. 
+Build 30 things in 30 days with vanilla JavaScript; no frameworks, libraries, etc.
   Pacing is totally up to the individual; if you feel like knocking out 30 challenges
   in 30 minutes, hey, more power to you, but that would miss the point of this course (IMO).
   The idea behind these exercises is to utilize small amounts of what would regularly be
@@ -36,10 +36,10 @@ I think it's fair to say that, coming into this course, you should have a decent
   a challenge, but given that these exercises require you to work with those very topics
   time and time again, JavaScript30 is still an excellent learning resource.
 
-The starter files (available [here](https://github.com/wesbos/JavaScript30)) include solutions to 
-  most challenges, so this isn't really meant to be taken as some kind of competition. 
-  JavaScript30 is focused more on helping developers enhance their current skillset and 
-  reducing developer reliance on external JS libraries; **if it can be done with a JS library, 
+The starter files (available [here](https://github.com/wesbos/JavaScript30)) include solutions to
+  most challenges, so this isn't really meant to be taken as some kind of competition.
+  JavaScript30 is focused more on helping developers enhance their current skillset and
+  reducing developer reliance on external JS libraries; **if it can be done with a JS library,
   it can (probably) be done with vanilla JS.**
 
 ## Table Of Contents

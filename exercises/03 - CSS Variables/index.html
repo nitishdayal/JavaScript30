@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Scoped CSS Variables and JS</title>
-
   <style>
-  /*
-    Define variables at the root level so their scope is the entire document
-  */
+    /* Define variables at the root level so their scope is the entire document */
     :root {
       --base: goldenrod;
       --blur: 10px;
       --padding: 10px;
     }
 
-    /*
-      Set image property values as the variables defined at the root element
-    */
+    /* Set image property values using previously defined variables */
     img {
+      box-sizing: border-box;
       background: var(--base);
       filter: blur(var(--blur));
       padding: var(--padding);
+      border-radius: 2rem;
     }
 
+    /* 'JS' text color that will match the image background color */
     .hl {
       color: var(--base);
     }
@@ -49,7 +46,6 @@
     }
   </style>
 </head>
-
 <body>
   <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
 
@@ -64,26 +60,43 @@
     <input type="color" name="base" value="#ffc600">
   </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  <img src="https://source.unsplash.com/800x500">
 
   <script>
-    // Declare & define variable reference to all inputs inside the 'control' class
-    const inputs = document.querySelectorAll('.controls input');
+    (()=>{
+      'use strict';
+      // Declare & define variable reference to all inputs inside the 'control' class
+      const inputs = document.querySelectorAll('.controls input');
 
-    // Event Handler function
-    function handleUpdate() {
-      // Get the data-sizing property value if one exists, or set as empty string
-      const suffix = this.dataset.sizing || '';
-      // Target the entire document and update the value of the CSS variable which corresponds
-      // with the 'name' property of the HTML element that triggered this function.
-      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
-    }
+      // Event Handler function. Such object destructure much default parameters wow
+      const handleUpdate = ({ target: { name, value, dataset: { sizing: suffix = '' } } }) => {
+        document.documentElement.style.setProperty(`--${name}`, value + suffix)
+      }
 
-    // Attach event listeners to each input
-    inputs.forEach(input => input.addEventListener('change', handleUpdate));
-    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+      // Helper function to add/remove event listeners because the standard syntax is long and ugly
+      const listen = (event, element, handler, cb = false, add = true) => (
+        add ?
+          cb ?
+            () => element.addEventListener(event, handler) :
+            element.addEventListener(event, handler) :
+          cb ?
+            () => element.removeEventListener(event, handler) :
+            element.removeEventListener(event, handler)
+      );
+
+      // Attach event listeners to each input
+      inputs.forEach(inp => {
+        // When input value is changed, call handleUpdate function
+        listen('change', inp, handleUpdate)
+        // When a mousedown event occurs on the input, attach *another* event listener to the input.
+        // This new event listener will listen for 'mousemove' event, and call on the
+        // handleUpdate function.
+        listen('mousedown', inp, listen('mousemove', inp, handleUpdate, true))
+        // When a mouseup event occurs on the input, remove the event listener for the 'mousemove'
+        // event (if one exists) that uses the `handleUpdate` function for the event handler.
+        listen('mouseup', inp, listen('mousemove', inp, handleUpdate, true, false))
+      });
+    })();
   </script>
-
 </body>
-
 </html>
