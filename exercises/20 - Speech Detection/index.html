@@ -23,7 +23,7 @@
     recognition.addEventListener('result', e => {
       const transcript = Array.from(e.results)
         .map(results => results[0])
-        .map(result => result.transcript)
+        .map(({trascript}) => transcript)
         .join('')
 
       newParagraphElement.textContent = transcript
@@ -31,7 +31,7 @@
         newParagraphElement = document.createElement('p')
         words.appendChild(newParagraphElement)
       }
-      
+
     })
 
     recognition.addEventListener('end', recognition.start)

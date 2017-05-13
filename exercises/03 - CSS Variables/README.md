@@ -1,10 +1,11 @@
 # Exercise 3: CSS Variables
+
 Nitish Dayal, Software & Applications Developer - [Contact](http://nitishdayal.me)  
 Last Commit Date: May 12, 2017
 
 The web page provided in this exercise displays an image, and has 3 form inputs
   from which the user can manipulate the padding, blur amount, and background
-  color of the image. Update the CSS and write the JavaScript code necessary to 
+  color of the image. Update the CSS and write the JavaScript code necessary to
   bring functionality to the inputs.
 
 ## Guide
@@ -24,6 +25,7 @@ The purpose of this exercise is to gain experience using _CSS3 variables_. These
 **Steps:**
 
 - CSS:
+
   1. Declare a new style for the `:root` element and declare three variables inside
     the style definition for `:root` with the same names as the `input` _HTML elements_.
     _CSS3 variables_ are declared in the following syntax format:
@@ -36,7 +38,8 @@ The purpose of this exercise is to gain experience using _CSS3 variables_. These
         --padding: 10px;
       }
       ```
-  2. Declare a new style for the `img` element and set the `background`, `filter`, and
+
+  1. Declare a new style for the `img` element and set the `background`, `filter`, and
     `padding` properties to the variables we defined at the root element:
       ```CSS
       /* 'var(--variableName)' to use previously defined CSS properties */
@@ -47,21 +50,26 @@ The purpose of this exercise is to gain experience using _CSS3 variables_. These
         padding: var(--padding);
       }
       ```
-  3. Declare a new style for the `.hl` class and set the color to the `base` variable.
+
+  1. Declare a new style for the `.hl` class and set the color to the `base` variable.
 
 - JavaScript:
+
   1. Declare & define a variable as a reference to all of the inputs on the page.
-  2. Iterate through the _HTML Node Elements_ that the variable is referencing and 
-    attach _event listeners_ to all of them that will call on an _event handler_ whenever
-    the input value has been changed.
-  3. Repeat step 2, listening for mouse movements on the inputs instead of value
-    changes.
-  4. Define a function that will be used as the _event handler_. This will update
-    the value of the _CSS3 variable_ **at the document level** corresponding with the 
-    `input` element's `name` property which triggered the event handler.
-    - Minor 'gotcha': Properties like `padding` and `blur` won't update because
+
+  1. Iterate through the _HTML Node Elements_ that the variable is referencing and
+    attach _event listeners_ to each one that will call on an _event handler_ whenever
+    the input value has been changed (the `change` event).
+
+  1. Repeat step 2, listening for mouse movements on the inputs instead of value
+    changes (the `mousemove` event).
+
+  1. Define a function that will be used as the _event handler_. It will update
+    the value of the _CSS3 variable_ **at the root document level** corresponding with
+    the `name` property of the `input` element which called this function.
+        - Minor 'gotcha': Properties like `padding` and `blur` won't update because
       the value from the input does not include the type of measurement we are using
-      ('px', 'em', etc.). The `input` _HTML elements_ also have a `data-*` property if 
+      ('px', 'em', etc.). The `input` _HTML elements_ also have a `data-sizing` property if
       they require a suffix. We can use this to attach the correct suffix to the
       value if necessary.
 

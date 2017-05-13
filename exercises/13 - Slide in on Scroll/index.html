@@ -139,18 +139,20 @@
     (() => {
       const sliderImages = document.querySelectorAll('.slide-in');
 
-      function debounce(func, wait = 20, immediate = true) {
+      const debounce = (func, wait = 20, immediate = true) => {
         let timeout;
-        return function () {
-          const context = this, args = arguments;
-          const later = function () {
+
+        return (...args)=> {
+          const later = () => {
             timeout = null;
-            if (!immediate) func.apply(context, args);
+            if (!immediate) func.apply(this, args);
           };
+
           const callNow = immediate && !timeout;
           clearTimeout(timeout);
           timeout = setTimeout(later, wait);
-          if (callNow) func.apply(context, args);
+
+          if (callNow) func.apply(this, args);
         };
       };
 

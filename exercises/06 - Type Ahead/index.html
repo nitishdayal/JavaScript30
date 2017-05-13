@@ -31,10 +31,9 @@
         .then(data => cities.push(...data))
 
       // Step 4
-      const matchInput = (inputString, cities) => cities.filter((location) => {
-        const regex = new RegExp(inputString, 'gi');
-        return location.city.match(regex) || location.state.match(regex)
-      });
+      const matchInput = (inputString, cities) => cities.filter(({city, state}) => (
+          city.match(new RegExp(inputString, 'gi')) || state.match(new RegExp(inputString, 'gi'))
+      ));
 
       // Step 6
       const numberWithCommas = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
