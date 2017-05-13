@@ -15,6 +15,7 @@
   <canvas id="draw" width="800" height="800"></canvas>
 
   <script>
+    'use strict';
     // Store logic inside an anonymous function to avoid polluting global namespace
     (() => {
       // Declare & define variable reference to canvas HTMLElement
@@ -29,7 +30,7 @@
 
       // Declare & define variable reference for current & last mouse location
       const mouse = { x: 0, y: 0 },
-        last_mouse = { x: 0, y: 0 };
+        last_mouse = { ...mouse};
 
       // Declare & define variables to change line hue & line width
       let hue = 0,
@@ -42,7 +43,7 @@
         ctx.moveTo(last_mouse.x, last_mouse.y);     // Starting point of path
         ctx.lineTo(mouse.x, mouse.y);               // Ending point of path
         ctx.closePath();              // Create path starting from moveTo and ending at lineTo
-        ctx.stroke();                 // Draw the defined path on the canvas                   
+        ctx.stroke();                 // Draw the defined path on the canvas
 
         hue >= 360 ? hue = 0 : hue++; // Ternary operator to reset/increase hue value
 
@@ -55,16 +56,19 @@
       // mousemove Event Handler function
       const setMouseLocation = (e) => {
         // Update values based on previous & current mouse locations using array destructuring
-        [last_mouse.x, last_mouse.y] = [mouse.x, mouse.y];
-        [mouse.x, mouse.y] = [e.offsetX, e.offsetY];
+        [last_mouse.x, last_mouse.y, mouse.x, mouse.y] = [mouse.x, mouse.y, e.offsetX, e.offsetY];
       }
 
+      const quick = {
+        add: () => myCanvas.addEventListener('mousemove', quickDraw),
+        rem: () => myCanvas.removeEventListener('mousemove', quickDraw)
+      }
       // Attach event listeners
       myCanvas.addEventListener('mousemove', setMouseLocation);
-      myCanvas.addEventListener('mousedown', () => myCanvas.addEventListener('mousemove', quickDraw));
-      myCanvas.addEventListener('mouseup', () => myCanvas.removeEventListener('mousemove', quickDraw));
-      myCanvas.addEventListener('mouseout', () => myCanvas.removeEventListener('mousemove', quickDraw));
-    })(); // Immediately invoke anonymous function 
+      myCanvas.addEventListener('mousedown', quick.add);
+      myCanvas.addEventListener('mouseup', quick.rem);
+      myCanvas.addEventListener('mouseout', quick.rem);
+    })(); // Immediately invoke anonymous function
 
   </script>
 
