@@ -11,7 +11,8 @@
   <script>
     (() => {
       // Declare constants for secret code & array to hold keys pressed
-      const pressedKeys = [], secretCode = 'helloworld'
+      let pressedKeys = []
+      const secretCode = 'helloworld'
 
       // Attach event listener to window object
       window.addEventListener('keyup', (e) => {
@@ -27,12 +28,11 @@
           call the 'cornify_add()' function,
           & reset the array.
         */
-        if (pressedKeys.join('') === secretCode) {
+        pressedKeys.join('') === secretCode && (()=>{
           console.info('Hello you handsome devil!')
           cornify_add()
-          pressedKeys.length = 0
-        }
-
+          pressedKeys = []
+        })()
       })
     })(); // Wrap code in IIFE to avoid polluting the global namespace
 

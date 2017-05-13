@@ -18,7 +18,7 @@
   };
 
   const paintToCanavas = () => {
-    const width = video.videoWidth, height = video.videoHeight;
+    const { videoWidth: width, videoHeight: height } = video;
 
     canvas.width = width;
     canvas.height = height;

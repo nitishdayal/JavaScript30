@@ -186,7 +186,7 @@
     <script>
       (() => {
         // Hide all the list items because I don't want to see all that nonsense
-        document.querySelectorAll('[data-time]').forEach(listItem => listItem.hidden = true)
+        // document.querySelectorAll('[data-time]').forEach(listItem => listItem.hidden = true)
 
         // Declare a constant and define as an ARRAY of all items with a 'data-key'
         // property (used spread operator to create array)
@@ -197,7 +197,7 @@
           * value.
           */
         const seconds = allTimes
-          .map(listItem => listItem.dataset.time) // Get the 'data-time' property
+          .map(({dataset: { time }}) => time) // Get the 'data-time' property
           .map(timeValue => {
             /** Declare constants minutes & seconds using array destructuring
               * and define as the result of splitting the 'data-time' property
@@ -208,7 +208,7 @@
             return minutes * 60 + seconds // Return the total seconds
           })
           // Add up all the seconds
-          .reduce((runningTotal, seconds) => runningTotal + seconds)
+          .reduce((runningTotal, seconds) => runningTotal + seconds, 0)
 
         /** Calculate hours by dividing total seconds by 3600 (seconds in a minute (60)
           * multiplied by minutes in an hour (60)) and round the value DOWN before
