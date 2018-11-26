@@ -105,11 +105,11 @@ The last function we'll want to create is one that will bring functionality to t
       const paintToCanvas = () => { /* ... */};
     ```
 
-       - In the body of this function, declare two `const` variables and define them
+    - In the body of this function, declare two `const` variables and define them
          as the `video` element's width and height, and update the `canvas` width and height
          to reflect those values.
 
-           ```JavaScript
+        ```JavaScript
           const paintToCanavas = () => {
             const width = video.videoWidth;
             const height = video.videoHeight;
@@ -118,7 +118,7 @@ The last function we'll want to create is one that will bring functionality to t
 
              /* More to do... */
            };
-           ```
+        ```
 
     - Still in the body of the function, return the _interval ID_ of a `setInterval()`
       function call, and within the body of that function call, draw the current `video`
