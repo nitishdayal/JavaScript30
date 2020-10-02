@@ -85,13 +85,13 @@
       setInterval(() => {
 
       // Create new Date object
-      const now = new Date();
+      const clockHand = new Date();
 
       // Get current seconds, minutes, & hours and calculate the degree shift
       const
-        secondHandDegrees = calcDegrees(now.getSeconds(), 60),
-        minuteHandDegrees = calcDegrees(now.getMinutes(), 60),
-        hourHandDegrees = calcDegrees(now.getHours(), 12);
+        secondHandDegrees = calcDegrees(clockHand.getSeconds(), 60),
+        minuteHandDegrees = calcDegrees(clockHand.getMinutes(), 60),
+        hourHandDegrees = calcDegrees(clockHand.getHours(), 12);
 
       // Apply rotation to the clock hands corresponding with current time value
       secondHand.style.transform = `rotate(${secondHandDegrees}deg)`;
