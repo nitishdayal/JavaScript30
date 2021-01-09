@@ -46,7 +46,7 @@
         ctx.stroke();                 // Draw the defined path on the canvas
 
         // Ternary operator to reset/increase hue value
-        hue >= 360 ? 0 : hue++;
+        hue >= 360 ? hue = 0 : hue++;
 
         // Ternary operator to increase/decrease line width
         increaseLineWidth ? ctx.lineWidth++ : ctx.lineWidth--;
